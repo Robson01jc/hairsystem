@@ -1,0 +1,6 @@
+table#table_customer tr td:nth-child(5) {
+	width: 69px;
+}
+table#table_customer tr td:nth-child(1) {
+	width: 60px;
+}

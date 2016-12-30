@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="js/bootstrap-3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index.css">
+<script type="text/javascript" src="js/jquery-3.1.1/jquery-3.1.1.min.js"></script>
+<script type="text/javascript"
+	src="js/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="js/jquery-tmpl-1.0.0/jquery.tmpl.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function() {
+
+			INDEX.init();
+
+		});
+	</script>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<form id="customer_form">
+					<div class="form-group">
+						<label for="name">Nome:</label>
+						<input type="text" class="form-control" name="name" id="name" placeholder="Insira seu nome...">
+					</div>
+					<div class="form-group">
+						<label for="phone">Telefone:</label>
+						<input type="text" class="form-control" name="phone" id="phone" placeholder="Insira seu telefone...">
+					</div>
+					<div class="form-group">
+						<label for="address">Endereço:</label>
+						<input type="text" class="form-control" name="address" id="address" placeholder="Insira seu endereço...">
+					</div>
+					<a href="javascript:void(0);" id="newCustomer" class="btn btn-primary">Novo</a>
+					<button type="submit" class="btn btn-success">Salvar</button>
+				</form>
+			</div>
+		</div>
+		
+		<br/>
+		
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<table id="table_customer" class="table table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>Id</th>
+							<th>Nome</th>
+							<th>Telefone</th>
+							<th>Endereço</th>
+							<th>Ações</th>
+						</tr>
+					</thead>
+					<tbody id="table_customer_body">
+	
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/index.js"></script>
+	</div>
+</body>
+</html>

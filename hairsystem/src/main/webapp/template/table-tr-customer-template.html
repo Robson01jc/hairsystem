@@ -1,0 +1,14 @@
+<tr>
+	<td>${id}</td>
+	<td>${name}</td>
+	<td>${phone}</td>
+	<td>${address}</td>
+	<td>
+		<a class="btn btn-info btn-xs" onclick="INDEX.editCustomer(${JSON.stringify($data)})">
+			<i class="glyphicon glyphicon-edit"></i>
+		</a>
+		<a class="btn btn-danger btn-xs" onclick="INDEX.deleteCustomer(${JSON.stringify($data)})">
+			<i class="glyphicon glyphicon-remove"></i>
+		</a>
+	</td>
+</tr>
